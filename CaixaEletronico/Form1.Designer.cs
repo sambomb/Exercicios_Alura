@@ -48,6 +48,7 @@
             this.button7 = new System.Windows.Forms.Button();
             this.comboContas = new System.Windows.Forms.ComboBox();
             this.buttonDelete = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textoTitular
@@ -232,11 +233,22 @@
             this.buttonDelete.UseVisualStyleBackColor = true;
             this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(57, 318);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(187, 23);
+            this.button8.TabIndex = 19;
+            this.button8.Text = "Teste string";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 339);
+            this.ClientSize = new System.Drawing.Size(284, 370);
+            this.Controls.Add(this.button8);
             this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.comboContas);
             this.Controls.Add(this.button7);
@@ -289,6 +301,7 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.ComboBox comboContas;
         private System.Windows.Forms.Button buttonDelete;
+        private System.Windows.Forms.Button button8;
     }
 }
 

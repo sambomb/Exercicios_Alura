@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace CaixaEletronico
 {
-    public abstract class Conta
+    //public abstract class Conta
+    public class Conta
     {
         public int Numero { get; set; }
         public string Nome { get; set; }
@@ -21,7 +22,15 @@ namespace CaixaEletronico
             }
         }
 
-        public abstract bool Saca(double valor);
+        //public abstract bool Saca(double valor);
+        public virtual bool Saca(double valor)
+        {
+            if (valor > 0)
+            {
+                this.Saldo -= valor;
+            }
+            return true;
+        }
 
         public void TransferePara( Conta destino, double valor)
         {

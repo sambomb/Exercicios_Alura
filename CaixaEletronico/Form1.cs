@@ -52,6 +52,15 @@ namespace CaixaEletronico
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
+            //var conjunto = new HashSet<Conta>();
+            //var c1 = new Conta();
+
+            //conjunto.Add(c1);
+            //conjunto.Add(c1);
+
+            //MessageBox.Show(conjunto.Count.ToString());
+
             contas = new Conta[3];
 
             Conta contaDoVictor = new ContaCorrente();
@@ -246,6 +255,12 @@ namespace CaixaEletronico
                 textoNumero.Text = Convert.ToString(0);
             }
 
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            var formularioTexto = new TrataTexto();
+            formularioTexto.ShowDialog();
         }
     }
 }

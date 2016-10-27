@@ -71,6 +71,12 @@
     <Compile Include="SeguroDeVida.cs" />
     <Compile Include="TotalizadorDeContas .cs" />
     <Compile Include="TotalizadorDeTributos.cs" />
+    <Compile Include="TrataTexto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrataTexto.Designer.cs">
+      <DependentUpon>TrataTexto.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="CadastroConta.resx">
       <DependentUpon>CadastroConta.cs</DependentUpon>
     </EmbeddedResource>
@@ -86,6 +92,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TrataTexto.resx">
+      <DependentUpon>TrataTexto.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
